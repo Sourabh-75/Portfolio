@@ -1,0 +1,361 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --white: #ffffff;
+  --aqua: #34d1bf;
+  --background-color: #070707;
+  --hover-color: #fde74c;
+  --card-bg-color: #252525;
+}
+
+body {
+  width: 100%;
+  background-color: var(--background-color);
+}
+
+/* header section */
+header {
+  background-color: var(--aqua);
+  color: var(--white);
+  padding: 1em 2em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#logo {
+  font-size: 2rem;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+nav ul li {
+  padding: 0 10px;
+}
+nav ul li a {
+  color: var(--white);
+  font-size: 1.3rem;
+  text-decoration: none;
+  text-transform: capitalize;
+  position: relative;
+  transition: color 0.3s;
+}
+nav ul li a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  width: 0;
+  height: 2px;
+  transition: width 0.3s;
+  background-color: var(--hover-color);
+}
+nav ul li a:hover::after {
+  width: 100%;
+}
+nav ul li a:hover {
+  color: var(--background-color);
+}
+#hamburger {
+  display: none;
+}
+
+/* hero section */
+#heroSection {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2em;
+  z-index: 1;
+}
+.hero-text {
+  flex-basis: 40%;
+  padding: 20px 0;
+}
+.hero-text h1 {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: var(--white);
+  position: relative;
+}
+.hero-text h1 span {
+  font-size: 48px;
+  font-weight: 700;
+  color: var(--aqua);
+}
+.hero-text h1::before {
+  content: "Hello It's Me";
+  font-family: "Nunito", sans-serif;
+  position: absolute;
+  top: -15px;
+  left: 0;
+  font-size: 1.3rem;
+  font-weight: 300;
+  color: var(--white);
+}
+.hero-text h3 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: var(--white);
+}
+.hero-text p {
+  font-size: 18px;
+  margin-bottom: 30px;
+  color: var(--white);
+}
+.hero-text a {
+  width: fit-content;
+  text-decoration: none;
+  color: var(--white);
+  font-size: 1rem;
+  font-weight: 400;
+  border: 1px solid var(--white);
+  padding: 10px 35px;
+  border-radius: 25px;
+  transition: 0.5s ease;
+}
+.hero-text a:hover {
+  background-color: var(--white);
+  color: var(--background-color);
+}
+.hero-image {
+  flex-basis: 50%;
+  padding: 20px;
+  max-width: 550px;
+  width: 100%;
+}
+.hero-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 2px solid var(--aqua);
+}
+
+/* Service Section */
+#serviceSection {
+  padding: 50px 0;
+}
+.service-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+.service {
+  flex-basis: 30%;
+  padding: 20px;
+  border: 1px solid var(--white);
+  background-color: var(--card-bg-color);
+  border-radius: 10px;
+  transition: all 0.3s ease-in-out;
+}
+.service:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px var(--white);
+}
+.service i {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: var(--aqua);
+  transition: color 0.3s;
+}
+.service:hover i {
+  color: var(--hover-color);
+}
+.service h3 {
+  font-weight: bold;
+  margin: 10px 0;
+  color: var(--white);
+}
+.service p {
+  font-size: 16px;
+  color: var(--white);
+}
+
+/* about section */
+#aboutSection {
+  padding: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+#aboutSection h2 {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 50px;
+  color: var(--white);
+}
+.about-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.developer-image {
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.developer-image img {
+  width: 100%;
+  height: 97%;
+  object-fit: cover;
+  border-radius: 1rem;
+  border: 2px solid var(--aqua);
+}
+
+.developer-bio {
+  width: 55%;
+  max-width: 550px;
+  padding: 0 20px;
+}
+
+.developer-bio h1 {
+  font-size: 50px;
+  font-style: oblique;
+  margin-top: 0;
+  color: var(--white);
+  text-transform: capitalize;
+}
+
+.developer-bio h2 {
+  margin-top: 0.7rem;
+  font-size: 30px;
+  color: var(--white);
+}
+.developer-bio p {
+  font-size: 1.5rem;
+  margin-top: 1.7rem;
+  color: var(--white);
+}
+/* design section */
+#design {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 0 0;
+}
+
+.design-text {
+  max-width: 600px;
+  width: 80%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.design-text h1 {
+  font-size: 3em;
+  font-weight: 300;
+  text-align: center;
+  color: var(--white);
+}
+.design-text p {
+  margin-top: 20px;
+  font-size: 1em;
+  color: var(--white);
+  position: relative;
+}
+
+#authorName::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: -20px;
+  width: 15px;
+  height: 1px;
+  background: var(--white);
+}
+
+#design hr {
+  width: 90%;
+  height: 3px;
+  background-color: var(--white);
+  margin: 50px 0 0;
+}
+/* contact section */
+#contactSection {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 0;
+}
+
+.contact-info {
+  max-width: 600px;
+  width: 80%;
+  text-align: start;
+}
+
+.contact-info h1 {
+  font-size: 3rem;
+  color: var(--aqua);
+  margin-bottom: 10px;
+}
+
+.contact-info h2 {
+  font-size: 1.5rem;
+  color: var(--white);
+  margin-bottom: 25px;
+}
+
+.contact-info a {
+  display: inline-block;
+  color: var(--white);
+  font-size: 1.2rem;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.contact-info a:hover {
+  color: var(--aqua);
+}
+
+#copyrightSection {
+  background-color: var(--aqua);
+  padding: 2em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#copyrightSection p {
+  color: var(--white);
+  font-size: 1.2rem;
+  font-weight: 500;
+  flex-wrap: wrap;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-links a {
+  margin: 0 10px;
+  color: var(--white);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+  color: var(--background-color);
+}
+
+.social-links i {
+  font-size: 24px;
+}

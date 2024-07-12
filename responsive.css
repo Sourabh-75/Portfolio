@@ -1,0 +1,197 @@
+/* Responsive styles :- 885px*/
+@media screen and (max-width: 885px) {
+  /* about section */
+  .developer-bio {
+    padding: 0;
+  }
+  .developer-bio h1 {
+    font-size: 40px;
+  }
+  .developer-bio h2 {
+    font-size: 25px;
+  }
+  .developer-bio p {
+    font-size: 1.2rem;
+  }
+}
+
+/* Responsive styles :- 768px*/
+@media screen and (max-width: 768px) {
+  /* menu bar */
+  #hamburger {
+    display: block;
+    cursor: pointer;
+  }
+  #hamburger i {
+    font-size: 1.5rem;
+  }
+  nav ul {
+    display: none;
+  }
+  nav ul.show {
+    z-index: 3;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    background-color: #070707;
+    padding: 1.5rem;
+    width: 100%;
+  }
+  nav ul li {
+    margin: 10px 0;
+    width: fit-content;
+  }
+
+  /* hero section */
+  #heroSection {
+    flex-direction: column;
+  }
+  .hero-text {
+    flex-basis: 100%;
+    padding: 50px 25px;
+  }
+  .hero-image {
+    flex-basis: 100%;
+    padding: 20px;
+  }
+
+  /* service section */
+  .service-container {
+    flex-wrap: wrap;
+  }
+  .service {
+    flex-basis: 80%;
+  }
+
+  /* about us section */
+  #aboutSection {
+    padding: 0;
+  }
+  .about-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .developer-image {
+    width: 80%;
+    margin: 20px auto;
+  }
+  .developer-bio {
+    width: 80%;
+    margin: 20px auto;
+  }
+  /* contact section */
+  #contactSection {
+    flex-direction: column;
+  }
+  .contact-info {
+    flex-basis: 100%;
+  }
+  /* footer section */
+  #copyrightSection {
+    padding: 15px;
+  }
+  .social-links a {
+    margin: 5px 10px;
+  }
+}
+
+/* Responsive styles :- 575px*/
+@media screen and (max-width: 575px) {
+  /* service section */
+  .service {
+    flex-basis: 80%;
+  }
+
+  /* about section */
+  .developer-bio {
+    padding: 0;
+  }
+
+  /* design section */
+  .design-text h1 {
+    font-size: 2.5em;
+  }
+
+  /* contact section */
+  #contactSection {
+    padding: 50px 0;
+  }
+
+  /* footer section */
+  #copyrightSection {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 20px;
+  }
+  .social-links {
+    flex-wrap: wrap;
+  }
+}
+
+/* Responsive styles :- 480px*/
+@media screen and (max-width: 480px) {
+  .hero-image {
+    padding: 10px;
+  }
+}
+
+/* Responsive styles :- 425px*/
+@media screen and (max-width: 425px) {
+  /* about section */
+  .developer-bio {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .developer-bio p {
+    margin-top: 0;
+    text-align: center;
+    font-size: 1rem;
+  }
+
+  /* contact section */
+  #contactSection {
+    flex-direction: column;
+    align-items: center;
+  }
+  .contact-info h1 {
+    font-size: 2rem;
+  }
+  .contact-info a {
+    font-size: 1.1rem;
+  }
+}
+
+/* Responsive styles :- 375px*/
+@media screen and (max-width: 375px) {
+  /* hero section */
+  .hero-text h1 {
+    font-size: 28px;
+  }
+  .hero-text h1 span {
+    font-size: 36px;
+  }
+  .hero-text h1::before {
+    top: -20px;
+  }
+  .hero-text h3 {
+    font-size: 20px;
+  }
+  .hero-text p {
+    font-size: 16px;
+  }
+
+  /* about section */
+  .developer-bio {
+    width: 95%;
+  }
+
+  /* design section */
+  .design-text h1 {
+    font-size: 2em;
+  }
+}
