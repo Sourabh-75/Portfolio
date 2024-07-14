@@ -50,6 +50,7 @@
 
 .card h3 {
   font-size: 18px;
+  font-weight: 400;
   margin-top: 10px;
   color: var(--white);
 }
