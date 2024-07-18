@@ -1,5 +1,7 @@
 :root {
   --white: #ffffff;
+  --aqua: #34d1bf;
+  --hover-color: #fde74c;
   --card-bg-color: #252525;
 }
 
@@ -53,6 +55,11 @@
   font-weight: 400;
   margin-top: 10px;
   color: var(--white);
+  transition: color 0.3s;
+}
+
+.card:hover h3 {
+  color: var(--hover-color);
 }
 
 /* responsive styles */
