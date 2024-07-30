@@ -83,6 +83,10 @@
     background-size: cover;
     transition: transform 0.3s ease-in-out;
   }
+
+  .linkedin-banner img {
+    object-fit: contain;
+  }
   
   .yt-banner:hover img, .facebook-banner:hover img {
     transform: scale(1.1);
