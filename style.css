@@ -335,7 +335,7 @@ nav ul li a:hover {
 
 #copyrightSection {
   background-color: var(--aqua);
-  padding: 2em;
+  padding: 1.5em;
   display: flex;
   justify-content: space-between;
   align-items: center;
