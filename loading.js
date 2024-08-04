@@ -12,7 +12,7 @@ function loadImagesSequentially() {
       image.src = image.dataset.src;
       index++;
 
-      globalThis.setTimeout(loadNextImage, 100);
+      globalThis.setTimeout(loadNextImage, 250);
     }
   }
 
